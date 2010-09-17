@@ -9,8 +9,6 @@ using System.Collections.Generic;
 using Telerik.WinControls.UI;
 using Telerik.WinControls;
 
-
-
 namespace Form1{
 
     public class Form1 : System.Windows.Forms.Form
@@ -19,12 +17,10 @@ namespace Form1{
         LoadMovie lm = new LoadMovie();
         Form3 fm3 = new Form3();
         Form2 fm = new Form2();
-        string movie, trailer; 
- 
-        
-        
-        
-        // Windows Designer variables
+        string movie, trailer;
+
+        #region Windows Designer variables
+      
         private System.Windows.Forms.MainMenu mainMenu1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.MenuItem menuItem1;
@@ -59,20 +55,15 @@ namespace Form1{
         private RadThemeManager radThemeManager1;
         private MenuItem menuItemFullscreen;
         private System.ComponentModel.IContainer components;
-
+        #endregion
         public Form1()
         {          
             InitializeComponent();
-            prepopulateMovieList();
-             
+            prepopulateMovieList();             
         }   
 
-
         #region Windows Form Designer generated code
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
+      
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
@@ -167,8 +158,7 @@ namespace Form1{
             this.menuItem7,
             this.menuItem8,
             this.menuItemFullscreen});
-            this.menuItem5.Text = "&Show";
-            this.menuItem5.Click += new System.EventHandler(this.menuItem5_Click);
+            this.menuItem5.Text = "&Show";            
             // 
             // menuItem7
             // 
@@ -507,8 +497,7 @@ namespace Form1{
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Movie List  v.1";
             this.TransparencyKey = System.Drawing.Color.LightPink;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;            
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -522,14 +511,11 @@ namespace Form1{
         }
         #endregion
 
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
+       
         [STAThread]
         static void Main()
         {
             Application.Run(new Form1());
-
         }
 
         // Events
@@ -544,20 +530,17 @@ namespace Form1{
         }
 
 
-
         private void button1_Click(object sender, EventArgs e)
         {    
             if (movie != "")
                 Process.Start(movie);            
-        }
-        
+        }        
 
         private void button3_Click(object sender, EventArgs e)
         {
             if (trailer != "")
                 Process.Start(trailer);
         }
-
 
         public void lMovieMenu_Click(object sender, EventArgs e)
         {            
@@ -568,8 +551,7 @@ namespace Form1{
             {
                 RadListBoxItem RadItm = new RadListBoxItem();
                 RadItm.Text = movie.Key;
-                listBox1.Items.Add(RadItm);
-                
+                listBox1.Items.Add(RadItm);              
                                            
             }
         }
@@ -614,7 +596,7 @@ namespace Form1{
            // }
            // else
            try
-            { {
+            { 
                 //sets the moviename            
                 RadListBoxItem item = listBox1.SelectedItem as RadListBoxItem;
 
@@ -692,9 +674,8 @@ namespace Form1{
                     label13.Text = null;
 
                 }
-            }
-        
-             }
+            }        
+           
             catch
             { }
 }
@@ -714,17 +695,7 @@ namespace Form1{
                 RadItm.Text = movie.Key;
                 listBox1.Items.Add(RadItm);
             }
-        }
-
-        private void menuItem5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
+        }     
 
         private void button5_Click(object sender, EventArgs e)
         {
@@ -737,11 +708,7 @@ namespace Form1{
             if (trailer != "")
                 Process.Start(trailer);
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
+   
 
         private void menuItem6_Click(object sender, EventArgs e)
         {
