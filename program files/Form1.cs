@@ -487,10 +487,9 @@ namespace Form1{
             // 
             // radThemeManager1
             // 
-            themeSource1.ThemeLocation = "C:\\Documents and Settings\\Administrator\\Desktop\\c programs\\movie list backup\\movi" +
-                "eliststylesheet.xml";
-            themeSource2.ThemeLocation = "C:\\Documents and Settings\\Administrator\\Desktop\\c programs\\movie list backup\\movi" +
-                "eliststylesheet.xml";
+            themeSource1.ThemeLocation = "movieliststylesheet.xml";
+
+            themeSource2.ThemeLocation = "movieliststylesheet.xml";
             this.radThemeManager1.LoadedThemes.AddRange(new Telerik.WinControls.ThemeSource[] {
             themeSource1,
             themeSource2});

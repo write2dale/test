@@ -1,5 +1,5 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movie List", "Movie List.csproj", "{C7E3FC60-AA61-4E88-85A0-2FE99A977F38}"
 EndProject
 Global
