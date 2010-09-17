@@ -18,6 +18,8 @@ namespace Form1{
         Form3 fm3 = new Form3();
         Form2 fm = new Form2();
         string movie, trailer;
+        public string fanart = "";
+        public string poster = "";
 
         #region Windows Designer variables
       
@@ -31,8 +33,6 @@ namespace Form1{
         private System.Windows.Forms.MenuItem menuItem4;
         private MenuItem menuItem6;
         private MenuItem menuItem5;
-        private MenuItem menuItem7;
-        private MenuItem menuItem8;
         private TableLayoutPanel tableLayoutPanel1;
         private FolderBrowserDialog folderBrowserDialog1;
         private PictureBox pictureBox1;
@@ -53,6 +53,22 @@ namespace Form1{
         private RadListBox listBox1;
         private MenuItem menuItem10;
         private RadThemeManager radThemeManager1;
+        private MenuItem menuItemGenre;
+        private MenuItem menuItemYear;
+        private MenuItem menuItemImdb;
+        private MenuItem menuItemMpaa;
+        private MenuItem menuItemRuntime;
+        private MenuItem menuItem22;
+        private MenuItem menuItemMovielist;
+        private MenuItem menuItemDescription;
+        private MenuItem menuItemMovietitle;
+        private MenuItem menuItemPoster;
+        private MenuItem menuItemFanart;
+        private MenuItem menuItem21;
+        private MenuItem menuItemFilterbutton;
+        private MenuItem menuItemTrailerbutton;
+        private MenuItem menuItemPlaybutton;
+        private MenuItem menuItem26;
         private MenuItem menuItemFullscreen;
         private System.ComponentModel.IContainer components;
         #endregion
@@ -77,9 +93,22 @@ namespace Form1{
             this.menuItem9 = new System.Windows.Forms.MenuItem();
             this.menuItemAddfilter = new System.Windows.Forms.MenuItem();
             this.menuItem5 = new System.Windows.Forms.MenuItem();
-            this.menuItem7 = new System.Windows.Forms.MenuItem();
-            this.menuItem8 = new System.Windows.Forms.MenuItem();
-            this.menuItemFullscreen = new System.Windows.Forms.MenuItem();
+            this.menuItemGenre = new System.Windows.Forms.MenuItem();
+            this.menuItemYear = new System.Windows.Forms.MenuItem();
+            this.menuItemImdb = new System.Windows.Forms.MenuItem();
+            this.menuItemMpaa = new System.Windows.Forms.MenuItem();
+            this.menuItemRuntime = new System.Windows.Forms.MenuItem();
+            this.menuItem22 = new System.Windows.Forms.MenuItem();
+            this.menuItemMovielist = new System.Windows.Forms.MenuItem();
+            this.menuItemDescription = new System.Windows.Forms.MenuItem();
+            this.menuItemMovietitle = new System.Windows.Forms.MenuItem();
+            this.menuItemPoster = new System.Windows.Forms.MenuItem();
+            this.menuItemFanart = new System.Windows.Forms.MenuItem();
+            this.menuItem21 = new System.Windows.Forms.MenuItem();
+            this.menuItemFilterbutton = new System.Windows.Forms.MenuItem();
+            this.menuItemTrailerbutton = new System.Windows.Forms.MenuItem();
+            this.menuItemPlaybutton = new System.Windows.Forms.MenuItem();
+            this.menuItem26 = new System.Windows.Forms.MenuItem();
             this.menuItem10 = new System.Windows.Forms.MenuItem();
             this.menuItem3 = new System.Windows.Forms.MenuItem();
             this.menuItem4 = new System.Windows.Forms.MenuItem();
@@ -103,6 +132,7 @@ namespace Form1{
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.radListBoxItem5 = new Telerik.WinControls.UI.RadListBoxItem();
             this.radThemeManager1 = new Telerik.WinControls.RadThemeManager();
+            this.menuItemFullscreen = new System.Windows.Forms.MenuItem();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -155,27 +185,133 @@ namespace Form1{
             // 
             this.menuItem5.Index = 2;
             this.menuItem5.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-            this.menuItem7,
-            this.menuItem8,
+            this.menuItemGenre,
+            this.menuItemYear,
+            this.menuItemImdb,
+            this.menuItemMpaa,
+            this.menuItemRuntime,
+            this.menuItem22,
+            this.menuItemMovielist,
+            this.menuItemDescription,
+            this.menuItemMovietitle,
+            this.menuItemPoster,
+            this.menuItemFanart,
+            this.menuItem21,
+            this.menuItemFilterbutton,
+            this.menuItemTrailerbutton,
+            this.menuItemPlaybutton,
+            this.menuItem26,
             this.menuItemFullscreen});
-            this.menuItem5.Text = "&Show";            
+            this.menuItem5.Text = "&Show";
             // 
-            // menuItem7
+            // menuItemGenre
             // 
-            this.menuItem7.Index = 0;
-            this.menuItem7.Text = "FanArt Background";
+            this.menuItemGenre.Checked = true;
+            this.menuItemGenre.Index = 0;
+            this.menuItemGenre.Text = "Genre";
+            this.menuItemGenre.Click += new System.EventHandler(this.menuItemGenre_Click);
             // 
-            // menuItem8
+            // menuItemYear
             // 
-            this.menuItem8.Index = 1;
-            this.menuItem8.Text = "Trailer";
+            this.menuItemYear.Checked = true;
+            this.menuItemYear.Index = 1;
+            this.menuItemYear.Text = "Year";
+            this.menuItemYear.Click += new System.EventHandler(this.menuItemYear_Click);
             // 
-            // menuItemFullscreen
+            // menuItemImdb
             // 
-            this.menuItemFullscreen.Checked = true;
-            this.menuItemFullscreen.Index = 2;
-            this.menuItemFullscreen.Text = "Full Screen";
-            this.menuItemFullscreen.Click += new System.EventHandler(this.menuItemFullscreen_Click);
+            this.menuItemImdb.Checked = true;
+            this.menuItemImdb.Index = 2;
+            this.menuItemImdb.Text = "Imdb Rating";
+            this.menuItemImdb.Click += new System.EventHandler(this.menuItemImdb_Click);
+            // 
+            // menuItemMpaa
+            // 
+            this.menuItemMpaa.Checked = true;
+            this.menuItemMpaa.Index = 3;
+            this.menuItemMpaa.Text = "MPAA";
+            this.menuItemMpaa.Click += new System.EventHandler(this.menuItemMpaa_Click);
+            // 
+            // menuItemRuntime
+            // 
+            this.menuItemRuntime.Checked = true;
+            this.menuItemRuntime.Index = 4;
+            this.menuItemRuntime.Text = "Run Time";
+            this.menuItemRuntime.Click += new System.EventHandler(this.menuItemRuntime_Click);
+            // 
+            // menuItem22
+            // 
+            this.menuItem22.Checked = true;
+            this.menuItem22.Index = 5;
+            this.menuItem22.Text = "-";
+            // 
+            // menuItemMovielist
+            // 
+            this.menuItemMovielist.Checked = true;
+            this.menuItemMovielist.Index = 6;
+            this.menuItemMovielist.Text = "Movie List";
+            this.menuItemMovielist.Click += new System.EventHandler(this.menuItemMovielist_Click);
+            // 
+            // menuItemDescription
+            // 
+            this.menuItemDescription.Checked = true;
+            this.menuItemDescription.Index = 7;
+            this.menuItemDescription.Text = "Description";
+            this.menuItemDescription.Click += new System.EventHandler(this.menuItemDescription_Click);
+            // 
+            // menuItemMovietitle
+            // 
+            this.menuItemMovietitle.Checked = true;
+            this.menuItemMovietitle.Index = 8;
+            this.menuItemMovietitle.Text = "Movie Title";
+            this.menuItemMovietitle.Click += new System.EventHandler(this.menuItemMovietitle_Click);
+            // 
+            // menuItemPoster
+            // 
+            this.menuItemPoster.Checked = true;
+            this.menuItemPoster.Index = 9;
+            this.menuItemPoster.Text = "Poster";
+            this.menuItemPoster.Click += new System.EventHandler(this.menuItemPoster_Click);
+            // 
+            // menuItemFanart
+            // 
+            this.menuItemFanart.Checked = true;
+            this.menuItemFanart.Index = 10;
+            this.menuItemFanart.Text = "Fanart";
+            this.menuItemFanart.Click += new System.EventHandler(this.menuItemFanart_Click);
+            // 
+            // menuItem21
+            // 
+            this.menuItem21.Checked = true;
+            this.menuItem21.Index = 11;
+            this.menuItem21.Text = "-";
+            // 
+            // menuItemFilterbutton
+            // 
+            this.menuItemFilterbutton.Checked = true;
+            this.menuItemFilterbutton.Index = 12;
+            this.menuItemFilterbutton.Text = "Filter List Button";
+            this.menuItemFilterbutton.Click += new System.EventHandler(this.menuItemFilterbutton_Click);
+            // 
+            // menuItemTrailerbutton
+            // 
+            this.menuItemTrailerbutton.Checked = true;
+            this.menuItemTrailerbutton.Index = 13;
+            this.menuItemTrailerbutton.Text = "Trailer Button";
+            this.menuItemTrailerbutton.Click += new System.EventHandler(this.menuItemTrailerbutton_Click);
+            // 
+            // menuItemPlaybutton
+            // 
+            this.menuItemPlaybutton.Checked = true;
+            this.menuItemPlaybutton.Index = 14;
+            this.menuItemPlaybutton.Text = "Play Button";
+            this.menuItemPlaybutton.Click += new System.EventHandler(this.menuItemPlaybutton_Click);
+            // 
+            // menuItem26
+            // 
+            this.menuItem26.Checked = true;
+            this.menuItem26.Index = 15;
+            this.menuItem26.Text = "-";
             // 
             // menuItem10
             // 
@@ -240,7 +376,7 @@ namespace Form1{
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.658545F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.61749F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.412533F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 53F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 9);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 15, 2);
             this.tableLayoutPanel1.Controls.Add(this.listBox1, 0, 0);
@@ -410,10 +546,10 @@ namespace Form1{
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.pictureBox1, 3);
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(585, 41);
+            this.pictureBox1.Location = new System.Drawing.Point(572, 41);
             this.pictureBox1.Name = "pictureBox1";
             this.tableLayoutPanel1.SetRowSpan(this.pictureBox1, 7);
-            this.pictureBox1.Size = new System.Drawing.Size(157, 327);
+            this.pictureBox1.Size = new System.Drawing.Size(147, 327);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
@@ -430,7 +566,7 @@ namespace Form1{
             this.listBox1.Name = "listBox1";
             this.tableLayoutPanel1.SetRowSpan(this.listBox1, 9);
             this.listBox1.ShowItemToolTips = false;
-            this.listBox1.Size = new System.Drawing.Size(574, 371);
+            this.listBox1.Size = new System.Drawing.Size(561, 371);
             this.listBox1.Sorted = Telerik.WinControls.Enumerations.SortStyle.Ascending;
             this.listBox1.TabIndex = 25;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged_1);
@@ -445,9 +581,9 @@ namespace Form1{
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label9.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(577, 15);
+            this.label9.Location = new System.Drawing.Point(564, 15);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(209, 23);
+            this.label9.Size = new System.Drawing.Size(222, 23);
             this.label9.TabIndex = 31;
             this.label9.Text = "MOVIE TITLE";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -478,11 +614,17 @@ namespace Form1{
             // radThemeManager1
             // 
             themeSource1.ThemeLocation = "movieliststylesheet.xml";
-
             themeSource2.ThemeLocation = "movieliststylesheet.xml";
             this.radThemeManager1.LoadedThemes.AddRange(new Telerik.WinControls.ThemeSource[] {
             themeSource1,
             themeSource2});
+            // 
+            // menuItemFullscreen
+            // 
+            this.menuItemFullscreen.Checked = true;
+            this.menuItemFullscreen.Index = 16;
+            this.menuItemFullscreen.Text = "Full Screen";
+            this.menuItemFullscreen.Click += new System.EventHandler(this.menuItemFullscreen_Click_2);
             // 
             // Form1
             // 
@@ -497,7 +639,7 @@ namespace Form1{
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Movie List  v.1";
             this.TransparencyKey = System.Drawing.Color.LightPink;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;            
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -715,12 +857,7 @@ namespace Form1{
             fm3.ShowDialog();
         }
 
-        private void menuItemFullscreen_Click(object sender, EventArgs e)
-        {
-            menuItemFullscreen.Checked = !menuItemFullscreen.Checked;
-            if (menuItemFullscreen.Checked) { FormBorderStyle = FormBorderStyle.Sizable; } else { FormBorderStyle = FormBorderStyle.None; }
        
-        }
 
       
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -739,6 +876,116 @@ namespace Form1{
                 listBox1.Refresh();
             } catch {}
         }
+
+        private void menuItemGenre_Click(object sender, EventArgs e)
+        {
+            menuItemGenre.Checked = !menuItemGenre.Checked;
+            if (menuItemGenre.Checked) { label6.Visible = true; } else { label6.Visible = false; }
+    
+        }
+
+        private void menuItemYear_Click(object sender, EventArgs e)
+        {
+            menuItemYear.Checked = !menuItemYear.Checked;
+            if (menuItemYear.Checked) { label7.Visible = true; } else { label7.Visible = false; }
+    
+        }
+
+        private void menuItemImdb_Click(object sender, EventArgs e)
+        {
+            menuItemImdb.Checked = !menuItemImdb.Checked;
+            if (menuItemImdb.Checked) { label13.Visible = true; } else { label3.Visible = false; }
+    
+        }
+
+        private void menuItemMpaa_Click(object sender, EventArgs e)
+        {
+            menuItemMpaa.Checked = !menuItemMpaa.Checked;
+            if (menuItemMpaa.Checked) { label4.Visible = true; } else { label4.Visible = false; }
+   
+        }
+
+        private void menuItemRuntime_Click(object sender, EventArgs e)
+        {
+            menuItemRuntime.Checked = !menuItemRuntime.Checked;
+            if (menuItemRuntime.Checked) { label5.Visible = true; } else { label5.Visible = false; }
+   
+        }
+
+        private void menuItemMovielist_Click(object sender, EventArgs e)
+        {
+            menuItemMovielist.Checked = !menuItemMovielist.Checked;
+            if (menuItemMovielist.Checked) { listBox1.Visible = true; } else { listBox1.Visible = false; }
+
+    
+        }
+
+        private void menuItemDescription_Click(object sender, EventArgs e)
+        {
+            menuItemDescription.Checked = !menuItemDescription.Checked;
+            if (menuItemDescription.Checked) { label3.Visible = true; } else { label3.Visible = false; }
+    
+        }
+
+        private void menuItemMovietitle_Click(object sender, EventArgs e)
+        {
+            menuItemMovietitle.Checked = !menuItemMovietitle.Checked;
+            if (menuItemMovietitle.Checked) { label9.Visible = true; } else { label9.Visible = false; }
+    
+        }
+
+        private void menuItemPoster_Click(object sender, EventArgs e)
+        {
+            menuItemPoster.Checked = !menuItemPoster.Checked;
+            if (menuItemPoster.Checked) { pictureBox1.Visible = true; } else { pictureBox1.Visible = false; }
+   
+        }
+
+        private void menuItemFanart_Click(object sender, EventArgs e)
+        {
+            menuItemFanart.Checked = !menuItemFanart.Checked;
+            if (!menuItemFanart.Checked) { panel1.BackgroundImage = null; }
+            else
+            { if (File.Exists(fanart)) { panel1.BackgroundImage = Image.FromFile(fanart); } }
+
+        }
+
+        private void menuItemFilterbutton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuItemTrailerbutton_Click(object sender, EventArgs e)
+        {
+            menuItemTrailerbutton.Checked = !menuItemTrailerbutton.Checked;
+            if (menuItemTrailerbutton.Checked) { button6.Visible = true; } else { button6.Visible = false; }
+       
+        }
+
+        private void menuItemPlaybutton_Click(object sender, EventArgs e)
+        {
+            menuItemPlaybutton.Checked = !menuItemPlaybutton.Checked;
+            if (menuItemPlaybutton.Checked) { button5.Visible = true; } else { button5.Visible = false; }
+    
+        }
+
+        private void menuItemFullscreen_Click_1(object sender, EventArgs e)
+        {
+            menuItemFullscreen.Checked = !menuItemFullscreen.Checked;
+            if (menuItemFullscreen.Checked) { FormBorderStyle = FormBorderStyle.None; } else { FormBorderStyle = FormBorderStyle.Sizable; } 
+       
+        }
+
+
+        private void menuItemFullscreen_Click_2(object sender, EventArgs e)
+        {
+            menuItemFullscreen.Checked = !menuItemFullscreen.Checked;
+            if (menuItemFullscreen.Checked) { FormBorderStyle = FormBorderStyle.None; }else { FormBorderStyle = FormBorderStyle.Sizable; }
+       
+        
+        }
+
+        
 
 
     }
