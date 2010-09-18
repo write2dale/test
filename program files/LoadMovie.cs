@@ -23,9 +23,9 @@ namespace Movie_list
 
         private void textBox1_Click(object sender, EventArgs e)
         {
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
             {
-                textBox1.Text = openFileDialog1.FileName;
+                textBox1.Text = folderBrowserDialog1.SelectedPath;
                 moviestoload = textBox1.Text;
             }                    
         }
