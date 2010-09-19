@@ -109,6 +109,7 @@ namespace Form1{
             this.menuItemTrailerbutton = new System.Windows.Forms.MenuItem();
             this.menuItemPlaybutton = new System.Windows.Forms.MenuItem();
             this.menuItem26 = new System.Windows.Forms.MenuItem();
+            this.menuItemFullscreen = new System.Windows.Forms.MenuItem();
             this.menuItem10 = new System.Windows.Forms.MenuItem();
             this.menuItem3 = new System.Windows.Forms.MenuItem();
             this.menuItem4 = new System.Windows.Forms.MenuItem();
@@ -132,7 +133,6 @@ namespace Form1{
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.radListBoxItem5 = new Telerik.WinControls.UI.RadListBoxItem();
             this.radThemeManager1 = new Telerik.WinControls.RadThemeManager();
-            this.menuItemFullscreen = new System.Windows.Forms.MenuItem();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -313,6 +313,13 @@ namespace Form1{
             this.menuItem26.Index = 15;
             this.menuItem26.Text = "-";
             // 
+            // menuItemFullscreen
+            // 
+            this.menuItemFullscreen.Checked = true;
+            this.menuItemFullscreen.Index = 16;
+            this.menuItemFullscreen.Text = "Full Screen";
+            this.menuItemFullscreen.Click += new System.EventHandler(this.menuItemFullscreen_Click_2);
+            // 
             // menuItem10
             // 
             this.menuItem10.Index = 3;
@@ -376,7 +383,7 @@ namespace Form1{
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.658545F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.61749F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.412533F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 53F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 71F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 9);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 15, 2);
             this.tableLayoutPanel1.Controls.Add(this.listBox1, 0, 0);
@@ -546,10 +553,10 @@ namespace Form1{
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.pictureBox1, 3);
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(572, 41);
+            this.pictureBox1.Location = new System.Drawing.Point(563, 41);
             this.pictureBox1.Name = "pictureBox1";
             this.tableLayoutPanel1.SetRowSpan(this.pictureBox1, 7);
-            this.pictureBox1.Size = new System.Drawing.Size(147, 327);
+            this.pictureBox1.Size = new System.Drawing.Size(139, 327);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
@@ -566,7 +573,7 @@ namespace Form1{
             this.listBox1.Name = "listBox1";
             this.tableLayoutPanel1.SetRowSpan(this.listBox1, 9);
             this.listBox1.ShowItemToolTips = false;
-            this.listBox1.Size = new System.Drawing.Size(561, 371);
+            this.listBox1.Size = new System.Drawing.Size(552, 371);
             this.listBox1.Sorted = Telerik.WinControls.Enumerations.SortStyle.Ascending;
             this.listBox1.TabIndex = 25;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged_1);
@@ -581,9 +588,9 @@ namespace Form1{
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label9.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(564, 15);
+            this.label9.Location = new System.Drawing.Point(555, 15);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(222, 23);
+            this.label9.Size = new System.Drawing.Size(231, 23);
             this.label9.TabIndex = 31;
             this.label9.Text = "MOVIE TITLE";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -618,13 +625,6 @@ namespace Form1{
             this.radThemeManager1.LoadedThemes.AddRange(new Telerik.WinControls.ThemeSource[] {
             themeSource1,
             themeSource2});
-            // 
-            // menuItemFullscreen
-            // 
-            this.menuItemFullscreen.Checked = true;
-            this.menuItemFullscreen.Index = 16;
-            this.menuItemFullscreen.Text = "Full Screen";
-            this.menuItemFullscreen.Click += new System.EventHandler(this.menuItemFullscreen_Click_2);
             // 
             // Form1
             // 
