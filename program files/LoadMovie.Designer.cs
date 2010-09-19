@@ -60,8 +60,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "LoadMovie";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Location of Movies";
-            this.Load += new System.EventHandler(this.LoadMovie_Load);
+            this.Text = "Location of Movies";            
             this.ResumeLayout(false);
             this.PerformLayout();
 

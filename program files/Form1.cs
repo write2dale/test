@@ -291,7 +291,6 @@ namespace Form1{
             this.menuItemFilterbutton.Checked = true;
             this.menuItemFilterbutton.Index = 12;
             this.menuItemFilterbutton.Text = "Filter List Button";
-            this.menuItemFilterbutton.Click += new System.EventHandler(this.menuItemFilterbutton_Click);
             // 
             // menuItemTrailerbutton
             // 
@@ -354,7 +353,7 @@ namespace Form1{
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(792, 579);
+            this.panel1.Size = new System.Drawing.Size(800, 600);
             this.panel1.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -383,7 +382,7 @@ namespace Form1{
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.658545F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.61749F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.412533F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 59F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 9);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 15, 2);
             this.tableLayoutPanel1.Controls.Add(this.listBox1, 0, 0);
@@ -407,7 +406,7 @@ namespace Form1{
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.13427F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.977489F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.019979F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(789, 579);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(797, 600);
             this.tableLayoutPanel1.TabIndex = 19;
             // 
             // tableLayoutPanel2
@@ -435,7 +434,7 @@ namespace Form1{
             this.tableLayoutPanel2.Controls.Add(this.label7, 3, 8);
             this.tableLayoutPanel2.Controls.Add(this.label13, 4, 8);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 421);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 436);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 10;
@@ -450,17 +449,17 @@ namespace Form1{
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.861838F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.723677F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.797579F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(789, 158);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(797, 164);
             this.tableLayoutPanel2.TabIndex = 31;
             // 
             // button5
             // 
             this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(591, 136);
+            this.button5.Location = new System.Drawing.Point(598, 142);
             this.button5.Name = "button5";
             this.tableLayoutPanel2.SetRowSpan(this.button5, 2);
-            this.button5.Size = new System.Drawing.Size(85, 19);
+            this.button5.Size = new System.Drawing.Size(86, 19);
             this.button5.TabIndex = 27;
             this.button5.Text = "Play &Movie";
             this.button5.UseVisualStyleBackColor = true;
@@ -470,10 +469,10 @@ namespace Form1{
             // 
             this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(682, 136);
+            this.button6.Location = new System.Drawing.Point(690, 142);
             this.button6.Name = "button6";
             this.tableLayoutPanel2.SetRowSpan(this.button6, 2);
-            this.button6.Size = new System.Drawing.Size(85, 19);
+            this.button6.Size = new System.Drawing.Size(86, 19);
             this.button6.TabIndex = 28;
             this.button6.Text = "Play &Trailer";
             this.button6.UseVisualStyleBackColor = true;
@@ -486,10 +485,10 @@ namespace Form1{
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label3.Location = new System.Drawing.Point(17, 22);
+            this.label3.Location = new System.Drawing.Point(18, 23);
             this.label3.Name = "label3";
             this.tableLayoutPanel2.SetRowSpan(this.label3, 6);
-            this.label3.Size = new System.Drawing.Size(750, 104);
+            this.label3.Size = new System.Drawing.Size(758, 109);
             this.label3.TabIndex = 22;
             this.label3.Text = "Movie Description";
             this.label3.UseCompatibleTextRendering = true;
@@ -499,9 +498,9 @@ namespace Form1{
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(400, 133);
+            this.label4.Location = new System.Drawing.Point(403, 139);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 15);
+            this.label4.Size = new System.Drawing.Size(110, 15);
             this.label4.TabIndex = 23;
             this.label4.Text = "mpaa";
             // 
@@ -510,9 +509,9 @@ namespace Form1{
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(514, 133);
+            this.label5.Location = new System.Drawing.Point(519, 139);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 15);
+            this.label5.Size = new System.Drawing.Size(65, 15);
             this.label5.TabIndex = 25;
             this.label5.Text = "runtime";
             // 
@@ -521,20 +520,20 @@ namespace Form1{
             this.label6.AutoSize = true;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(17, 133);
+            this.label6.Location = new System.Drawing.Point(18, 139);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(128, 15);
+            this.label6.Size = new System.Drawing.Size(129, 15);
             this.label6.TabIndex = 26;
-            this.label6.Text = "Genera";
+            this.label6.Text = "genre";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(151, 133);
+            this.label7.Location = new System.Drawing.Point(153, 139);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(116, 15);
+            this.label7.Size = new System.Drawing.Size(117, 15);
             this.label7.TabIndex = 24;
             this.label7.Text = "year";
             // 
@@ -543,7 +542,7 @@ namespace Form1{
             this.label13.AutoSize = true;
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(273, 133);
+            this.label13.Location = new System.Drawing.Point(276, 139);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(121, 15);
             this.label13.TabIndex = 32;
@@ -553,10 +552,10 @@ namespace Form1{
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.pictureBox1, 3);
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(568, 46);
+            this.pictureBox1.Location = new System.Drawing.Point(570, 47);
             this.pictureBox1.Name = "pictureBox1";
             this.tableLayoutPanel1.SetRowSpan(this.pictureBox1, 7);
-            this.pictureBox1.Size = new System.Drawing.Size(145, 372);
+            this.pictureBox1.Size = new System.Drawing.Size(145, 386);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
@@ -573,7 +572,7 @@ namespace Form1{
             this.listBox1.Name = "listBox1";
             this.tableLayoutPanel1.SetRowSpan(this.listBox1, 9);
             this.listBox1.ShowItemToolTips = false;
-            this.listBox1.Size = new System.Drawing.Size(557, 421);
+            this.listBox1.Size = new System.Drawing.Size(559, 436);
             this.listBox1.Sorted = Telerik.WinControls.Enumerations.SortStyle.Ascending;
             this.listBox1.TabIndex = 25;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged_1);
@@ -586,11 +585,11 @@ namespace Form1{
             this.tableLayoutPanel1.SetColumnSpan(this.label9, 9);
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label9.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(560, 17);
+            this.label9.Location = new System.Drawing.Point(562, 17);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(226, 26);
+            this.label9.Size = new System.Drawing.Size(232, 27);
             this.label9.TabIndex = 31;
             this.label9.Text = "MOVIE TITLE";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -599,7 +598,7 @@ namespace Form1{
             // 
             this.splitter1.Location = new System.Drawing.Point(0, 0);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 579);
+            this.splitter1.Size = new System.Drawing.Size(3, 600);
             this.splitter1.TabIndex = 5;
             this.splitter1.TabStop = false;
             // 
@@ -630,17 +629,16 @@ namespace Form1{
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(792, 579);
+            this.ClientSize = new System.Drawing.Size(800, 600);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
             this.Menu = this.mainMenu1;
-            this.MinimumSize = new System.Drawing.Size(600, 600);
+            this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Movie List  v.1";
             this.TransparencyKey = System.Drawing.Color.LightPink;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -706,20 +704,23 @@ namespace Form1{
                 StreamReader sr = new StreamReader("MovieLists.txt");
                 string moviepath = sr.ReadLine();
 
-                lm.WalkDirectoryTree(moviepath);
-
-                //populate the listbox with movies
-                foreach (KeyValuePair<string, string> movie in lm.movieCollection)
-                {
-                    RadListBoxItem RadItm = new RadListBoxItem();
-                    RadItm.Text = movie.Key;
-                    listBox1.Items.Add(RadItm);
-                                           
-                }
+                if(moviepath != "")
+                    lm.WalkDirectoryTree(moviepath);
             }
+
             catch
             { }
+          
+            //populate the listbox with movies
+            foreach (KeyValuePair<string, string> movie in lm.movieCollection)
+            {
+                RadListBoxItem RadItm = new RadListBoxItem();
+                RadItm.Text = movie.Key;
+                listBox1.Items.Add(RadItm);                                           
+            }           
+           
         }
+
 
         private void listBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
