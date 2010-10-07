@@ -290,8 +290,7 @@ namespace Form1{
             // 
             this.menuItemFilterbutton.Checked = true;
             this.menuItemFilterbutton.Index = 12;
-            this.menuItemFilterbutton.Text = "Filter List Button";
-            this.menuItemFilterbutton.Click += new System.EventHandler(this.menuItemFilterbutton_Click);
+            this.menuItemFilterbutton.Text = "Filter List Button";            
             // 
             // menuItemTrailerbutton
             // 
