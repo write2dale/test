@@ -35,7 +35,7 @@ namespace Movie_list
             //save movie location to a file for future use.
             if (textBox1.Text != "")
             {
-                StreamWriter sr = new StreamWriter("movieDBsettings.txt");
+                StreamWriter sr = new StreamWriter("MovieLists.txt");
                 sr.Write(textBox1.Text);
                 sr.Close();
 
@@ -76,14 +76,7 @@ namespace Movie_list
                     WalkDirectoryTree(dirInfo.FullName);
                 }
             }
-        }
-
-        private void LoadMovie_Load(object sender, EventArgs e)
-        {
-
-        }
-
-            
+        }           
 
         
     }
