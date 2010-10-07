@@ -290,7 +290,7 @@ namespace Form1{
             // 
             this.menuItemFilterbutton.Checked = true;
             this.menuItemFilterbutton.Index = 12;
-            this.menuItemFilterbutton.Text = "Filter List Button";            
+            this.menuItemFilterbutton.Text = "Filter List Button";
             // 
             // menuItemTrailerbutton
             // 
@@ -382,7 +382,7 @@ namespace Form1{
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.658545F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.61749F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.412533F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 71F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 76F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 9);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 15, 2);
             this.tableLayoutPanel1.Controls.Add(this.listBox1, 0, 0);
@@ -552,10 +552,10 @@ namespace Form1{
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.pictureBox1, 3);
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(563, 41);
+            this.pictureBox1.Location = new System.Drawing.Point(559, 41);
             this.pictureBox1.Name = "pictureBox1";
             this.tableLayoutPanel1.SetRowSpan(this.pictureBox1, 7);
-            this.pictureBox1.Size = new System.Drawing.Size(139, 327);
+            this.pictureBox1.Size = new System.Drawing.Size(138, 327);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
@@ -572,7 +572,7 @@ namespace Form1{
             this.listBox1.Name = "listBox1";
             this.tableLayoutPanel1.SetRowSpan(this.listBox1, 9);
             this.listBox1.ShowItemToolTips = false;
-            this.listBox1.Size = new System.Drawing.Size(552, 371);
+            this.listBox1.Size = new System.Drawing.Size(548, 371);
             this.listBox1.Sorted = Telerik.WinControls.Enumerations.SortStyle.Ascending;
             this.listBox1.TabIndex = 25;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged_1);
@@ -587,9 +587,9 @@ namespace Form1{
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label9.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(555, 15);
+            this.label9.Location = new System.Drawing.Point(551, 15);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(231, 23);
+            this.label9.Size = new System.Drawing.Size(235, 23);
             this.label9.TabIndex = 31;
             this.label9.Text = "MOVIE TITLE";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
